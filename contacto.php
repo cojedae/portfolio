@@ -1,3 +1,12 @@
+<?php
+
+$pg = "contacto";
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -16,35 +25,8 @@
 </head>
 
 <body id="Contacto">
-    <header class="container">
-        <nav class="navbar navbar-expand-md pt-3 px-1  py-1 ">
-            <div class="container-fluid">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link py-1 px-3 " aria-current="page" href="index.php">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-1 px-3 " href="sobre-mi.php">Sobre Mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link py-1 px-3 " href="proyectos.php">Proyectos</a>
-                        <li class="nav-item">
-                            <a class="nav-link py-1 px-3  active" href="contacto.php">Contacto </a> 
-                        </li>
-                    </ul>
-                    <div class="d-flex">
-                        <a class="btn btn-rojo"> <i class="fa-solid fa-file-arrow-down"></i> Descargar mi CV </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
+    <?php include_once ("header.php"); ?>
+                                                                                                
     </header>
     <main class="container">
         <div class="row">
@@ -59,18 +41,16 @@
             <div class="col-12 col-sm-6">
                 <form action="" method="post">
                     <div class="mb-3">
-                        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" class="form-control"> 
+                        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" class="form-control">
                     </div>
                     <div class="mb-3">
                         <input type="email" name="txtCorreo" id="txtCorreo" placeholder="Correo" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Telefono/whatsapp"
-                            class="form-control">
+                        <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="Telefono/whatsapp" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe tu mensaje"
-                            class="form-control"></textarea>
+                        <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe tu mensaje" class="form-control"></textarea>
                     </div>
                     <div class="mb-3">
                         <button type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-blanco px-4 ">ENVIAR</button>
